@@ -1,0 +1,15 @@
+// A simple program that formats a 10 digit phone number, xxxyyyzzzz, as (xxx) yyy-zzz
+
+#include <iostream>
+
+int main() {
+   long phoneNumber;
+
+   std::cin >> phoneNumber;
+   
+   std::cout << "(" << phoneNumber / 10000000 << ") ";
+   std::cout << (phoneNumber / 10000) % 1000 << "-";
+   std::cout << phoneNumber % 10000 << std::endl;
+   
+   return 0;
+}
